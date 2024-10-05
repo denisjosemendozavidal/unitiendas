@@ -1,0 +1,77 @@
+.header {
+  position: fixed;
+  top: 0;
+  width: 100%;
+  background-color: #ffffff; /* Cambia el color según tu paleta */
+  border-bottom: 1px solid #e5e7eb; /* Cambia el color según tu paleta */
+  z-index: 1000;
+}
+
+/* Navbar Styles */
+.navbar {
+  display: grid;
+  grid-template-columns: 1fr max-content 1fr;
+  align-items: center;
+  padding: 0 5%;
+  min-height: 72px; /* Puedes ajustar la altura mínima */
+}
+
+.navbar .nav-logo {
+  display: flex;
+  align-items: center;
+}
+
+.navbar .nav-logo img {
+  height: 40px; /* Ajusta el tamaño del logo */
+}
+
+/* Button Styles */
+.button {
+  width: 100%;
+  padding: 12px;
+  border: 1px solid #e5e7eb;
+  background-color: #f97316; /* Color del botón */
+  color: #ffffff;
+  font-size: 16px;
+  cursor: pointer;
+  transition: background-color 0.3s;
+}
+
+.button:hover {
+  background-color: #dd6b20; /* Color al pasar el cursor */
+}
+
+.nav-button {
+  margin-top: 24px;
+}
+
+/* Desktop Styles */
+@media (min-width: 1024px) {
+  .navbar {
+    grid-template-columns: auto 1fr auto;
+    padding: 0 5%;
+    min-height: 72px;
+  }
+
+  .nav-menu {
+    position: static;
+    height: auto;
+    width: auto;
+    flex-direction: row;
+    align-items: center;
+    background-color: transparent;
+    transform: translateX(0);
+    opacity: 1;
+    transition: none;
+  }
+
+  .nav-button {
+    margin-left: 16px;
+    margin-top: 0;
+  }
+
+  .button {
+    width: auto;
+    padding: 8px 16px;
+  }
+}

@@ -1,13 +1,13 @@
 :root {
   --background: #ffffff;
   --foreground: #171717;
-}
-
-@media (prefers-color-scheme: dark) {
-  :root {
-    --background: #0a0a0a;
-    --foreground: #ededed;
-  }
+  --darkBlue: #1e3a8a;
+  --green: #10b981;
+  --orange: #f97316;
+  --white: #ffffff;
+  --lightGray: #f3f4f6;
+  --darkGray: #374151;
+  --darkerGray: #1f2937;
 }
 
 html,
@@ -39,4 +39,25 @@ a {
   html {
     color-scheme: dark;
   }
+}
+
+.pagewrapper {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+.globalPaddingAndStructuring {
+  display: flex;
+  flex-direction: column;
+  gap: 3rem;
+  flex-wrap: wrap;
+  align-content: center;
+  align-items: center;
+  max-width: 90rem;
+  padding: 2rem;
+}
+
+.heroSectionStyling {
+  margin-top: 4rem;
 }
