@@ -1,3 +1,49 @@
+/*
+Color pallet for branding and styling ideas for the pages: 
+
+Aplicación Práctica en el Landing Page:
+Encabezado y Navbar:
+
+Fondo: Azul oscuro.
+Texto y Logotipo: Blanco para crear contraste y asegurar legibilidad.
+Elementos de Navegación Activos: Subrayados o resaltados en naranja.
+Sección "¿Qué es Unitiendas?":
+
+Fondo: Blanco.
+Título: Azul oscuro.
+Texto: Gris oscuro (#374151) para comodidad visual.
+Iconos o Elementos Grficos: Verde para resaltar crecimiento y comunidad.
+Beneficios para los Tenderos:
+
+Fondo: Gris claro para diferenciar esta sección.
+Títulos de Beneficios: Azul oscuro.
+Descripción de Beneficios: Texto en gris oscuro.
+Iconos: Combinación de verde y naranja para destacar.
+Llamados a la Acción (CTA):
+
+Botones: Fondo naranja con texto en blanco para resaltar y atraer clics.
+Efecto Hover: Al pasar el cursor, cambiar a un tono más oscuro de naranja o azul.
+Pie de Página (Footer):
+
+Fondo: Azul oscuro o gris muy oscuro (#1F2937).
+Texto: Blanco o gris claro para legibilidad.
+Enlaces de Redes Sociales: Íconos en blanco que cambien a naranja o verde al pasar el cursor.
+Consideraciones Culturales:
+Adecuación al Público Objetivo: Los colores seleccionados son generalmente bien recibidos y no tienen connotaciones negativas en las culturas latinoamericanas.
+
+Accesibilidad: Asegúrate de que haya suficiente contraste entre el texto y el fondo para cumplir con las pautas de accesibilidad, lo cual es importante para todos los usuarios.
+
+Paleta de Colores Resumida:
+Azul Oscuro: #1E3A8A
+Verde: #10B981
+Naranja: #F97316
+Blanco: #FFFFFF
+Gris Claro: #F3F4F6
+Gris Oscuro (para texto): #374151
+Gris Muy Oscuro (para footer): #1F2937
+
+*/
+
 :root {
   --background: #ffffff;
   --foreground: #171717;
