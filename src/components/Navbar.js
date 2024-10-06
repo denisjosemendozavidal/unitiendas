@@ -1,6 +1,13 @@
 import "../styles/globals.css";
 import "../styles/navbar.css";
 
+/*Need to continue working on this styling, items to fix: 
+
+1 - Fill of the whatsapp logo, need it to be white.
+2 - Need the background to be trasnparent when page loads and then go white once scrolling begins
+
+*/
+
 export default function Navbar() {
   return (
     <header class="header">
@@ -12,7 +19,7 @@ export default function Navbar() {
           />
         </a>
 
-        <div class="nav-button-wrapper">
+        <div class="main-button-wrapper">
           <button class="button">
             Contactanos{" "}
             <img

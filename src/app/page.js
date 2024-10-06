@@ -1,4 +1,5 @@
 import "../styles/globals.css";
+import "../styles/homePage.css";
 
 export const metadata = {
   title: "UniTiendas",
@@ -35,9 +36,26 @@ export const metadata = {
 
 const HeroSection = () => {
   return (
-    <section className="heroSectionStyling">
-      <h1 className="h1Styling">Bienvenidos A Unitiendas</h1>
-      <p className="subTitleStyling"> Compra mas barato, misma calidad</p>
+    <section className="heroSectionWrapper">
+      <div className="heroSectionContent">
+        <h1 className="h1Styling">Bienvenidos A Unitiendas</h1>
+        <p className="subTitleStyling"> Compra mas barato, misma calidad!</p>
+        <div class="nav-button-wrapper">
+          <button class="button">
+            Contactanos{" "}
+            <img
+              className="whatsappSVGInButton"
+              src="../assets/whatsappSVG.svg"
+              alt="Whatsapp Logo"
+            />
+          </button>
+        </div>
+      </div>
+      <img
+        src="../assets/images/placeholderGift.gif"
+        alt="Placeholder Gift"
+        className="heroSectionBG"
+      />
     </section>
   );
 };

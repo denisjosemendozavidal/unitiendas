@@ -1,0 +1,40 @@
+:root {
+  --background: #ffffff;
+  --foreground: #171717;
+  --darkBlue: #1e3a8a;
+  --green: #10b981;
+  --orange: #f97316;
+  --white: #ffffff;
+  --lightGray: #f3f4f6;
+  --darkGray: #374151;
+  --darkerGray: #1f2937;
+}
+
+.heroSectionWrapper {
+  height: 100vh;
+  width: 100vw;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  border: solid black;
+}
+
+.heroSectionContent {
+  height: 100%;
+  width: 100%;
+  max-width: 90rem;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  z-index: 80;
+}
+
+.heroSectionBG {
+  position: absolute;
+  width: 100%;
+  height: 100%;
+  z-index: 50;
+  object-fit: cover;
+}
