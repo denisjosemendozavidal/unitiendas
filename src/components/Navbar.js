@@ -12,8 +12,15 @@ export default function Navbar() {
           />
         </a>
 
-        <div class="nav-button">
-          <button class="button">Button</button>
+        <div class="nav-button-wrapper">
+          <button class="button">
+            Contactanos{" "}
+            <img
+              className="whatsappSVGInButton"
+              src="../assets/whatsappSVG.svg"
+              alt="Whatsapp Logo"
+            />
+          </button>
         </div>
       </nav>
     </header>

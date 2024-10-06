@@ -1,19 +1,35 @@
+:root {
+  --background: #ffffff;
+  --foreground: #171717;
+  --darkBlue: #1e3a8a;
+  --green: #10b981;
+  --orange: #f97316;
+  --white: #ffffff;
+  --lightGray: #f3f4f6;
+  --darkGray: #374151;
+  --darkerGray: #1f2937;
+}
+
 .header {
   position: fixed;
+  display: flex;
+  justify-content: center;
   top: 0;
   width: 100%;
-  background-color: #ffffff; /* Cambia el color según tu paleta */
-  border-bottom: 1px solid #e5e7eb; /* Cambia el color según tu paleta */
+  background-color: #ffffff;
+  border-bottom: 1px solid #e5e7eb;
   z-index: 1000;
 }
 
 /* Navbar Styles */
 .navbar {
-  display: grid;
-  grid-template-columns: 1fr max-content 1fr;
+  display: flex;
   align-items: center;
+  justify-content: space-between;
+  width: 100%;
+  max-width: 90rem;
   padding: 0 5%;
-  min-height: 72px; /* Puedes ajustar la altura mínima */
+  min-height: 50px;
 }
 
 .navbar .nav-logo {
@@ -22,56 +38,36 @@
 }
 
 .navbar .nav-logo img {
-  height: 40px; /* Ajusta el tamaño del logo */
+  height: 40px;
 }
 
 /* Button Styles */
+
 .button {
-  width: 100%;
-  padding: 12px;
   border: 1px solid #e5e7eb;
-  background-color: #f97316; /* Color del botón */
+  background-color: var(--darkBlue);
   color: #ffffff;
-  font-size: 16px;
+  font-size: 18px;
   cursor: pointer;
   transition: background-color 0.3s;
+  border-radius: 20px;
+  height: 40px;
+  padding: 15px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  gap: 0.5rem;
 }
 
 .button:hover {
-  background-color: #dd6b20; /* Color al pasar el cursor */
+  background-color: #26c943;
 }
 
-.nav-button {
-  margin-top: 24px;
+.whatsappSVGInButton {
+  width: 20px;
+  fill: white;
 }
 
 /* Desktop Styles */
-@media (min-width: 1024px) {
-  .navbar {
-    grid-template-columns: auto 1fr auto;
-    padding: 0 5%;
-    min-height: 72px;
-  }
-
-  .nav-menu {
-    position: static;
-    height: auto;
-    width: auto;
-    flex-direction: row;
-    align-items: center;
-    background-color: transparent;
-    transform: translateX(0);
-    opacity: 1;
-    transition: none;
-  }
-
-  .nav-button {
-    margin-left: 16px;
-    margin-top: 0;
-  }
-
-  .button {
-    width: auto;
-    padding: 8px 16px;
-  }
+@media (max-width: 1024px) {
 }
