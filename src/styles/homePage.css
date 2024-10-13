@@ -53,6 +53,11 @@
 .OverallSectionStyling {
   width: 100%;
   padding: 2rem;
+}
+
+/*Styling for WhyUs Section*/
+
+.whyUsTitleAndCardsWrapper {
   display: flex;
   flex-direction: column;
   align-items: center;
@@ -60,8 +65,6 @@
   gap: 2rem;
   height: 50rem;
 }
-
-/*Styling for WhyUs Section*/
 
 .whyUsTitleAndSubtitle {
   display: flex;
@@ -143,4 +146,80 @@
   flex-direction: column;
   gap: 1rem;
   justify-content: center;
+}
+
+/*Styling for How It works section*/
+
+.howItWorksSectionHeaderAndListWrapper {
+  display: flex;
+  gap: 2rem;
+  padding: 1rem;
+  justify-content: center;
+}
+
+.howItWorksHeaderAndSubheaderWrapper {
+  width: 40%;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+}
+
+.howitworksListOfItemsWrapper {
+  display: flex;
+  flex-direction: column;
+  gap: 1.5rem;
+}
+
+.howItworksItemWrapper {
+  display: flex;
+  gap: 0.5rem;
+  align-items: center;
+}
+
+.howitWorksItemLink {
+  display: flex;
+  gap: 0.5rem;
+  align-items: center;
+}
+
+/*Styling for About Us section*/
+
+.aboutUsTitleImageAndDescriptionWrapper {
+  display: flex;
+  flex-direction: column;
+  gap: 2rem;
+}
+
+.aboutUsTitleAndSubtitleWrapper {
+  display: flex;
+  flex-direction: column;
+  gap: 1rem;
+  align-items: center;
+}
+
+.aboutUsImageAndTextWrapper {
+  display: flex;
+  gap: 2rem;
+  align-items: center;
+}
+
+.aboutUsImageWrapper {
+  width: 60%;
+}
+
+.aboutUsImage {
+  object-fit: cover;
+}
+
+.aboutUsTextAndAutorWrapper {
+  display: flex;
+  flex-direction: column;
+  gap: 2rem;
+  align-items: center;
+}
+
+.aboutUsTextWrapper {
+  display: flex;
+  flex-direction: column;
+  gap: 1rem;
 }

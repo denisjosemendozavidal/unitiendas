@@ -20,14 +20,18 @@ export default function Navbar() {
         </a>
 
         <div class="main-button-wrapper">
-          <button class="button">
+          <a
+            class="button"
+            href="https://api.whatsapp.com/send?phone=573059321550"
+            target="_blank"
+          >
             Contactanos{" "}
             <img
               className="whatsappSVGInButton"
               src="../assets/whatsappSVG.svg"
               alt="Whatsapp Logo"
             />
-          </button>
+          </a>
         </div>
       </nav>
     </header>

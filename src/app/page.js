@@ -42,14 +42,18 @@ const HeroSection = () => {
           <h1 className="h1Styling">Bienvenidos A Unitiendas</h1>
           <p className="subTitleStyling"> Compra mas barato, misma calidad!</p>
           <div class="nav-button-wrapper">
-            <button class="button">
+            <a
+              class="button"
+              href="https://api.whatsapp.com/send?phone=573059321550"
+              target="_blank"
+            >
               Contactanos{" "}
               <img
                 className="whatsappSVGInButton"
                 src="../assets/whatsappSVG.svg"
                 alt="Whatsapp Logo"
               />
-            </button>
+            </a>
           </div>
         </div>
         <svg
@@ -77,41 +81,23 @@ const HeroSection = () => {
 const WhyUs = () => {
   return (
     <section className="OverallSectionStyling">
-      <div className="whyUsTitleAndSubtitle">
-        <h2 className="h2Styling">¿Por que Unitiendas?</h2>
-        <p className=""> La Razon es sencilla, con unitiendas tienes:</p>
-      </div>
-      <div className="whyUsCardsWrapper">
-        <div className="whyUsFirstCard">
-          <img
-            className="whyUsFirstCardImage"
-            src="https://d22po4pjz3o32e.cloudfront.net/placeholder-image-landscape.svg"
-            alt=""
-          />
-          <div className="whyUsFirstCardText">
-            <h3 className="whyUsFirstCardHeader">
-              Acceso Directo a los mejores Proveedores
-            </h3>
-            <p className="whyUsFirstCardSubHeader">
-              Lorem Ipsum is simply dummy text of the printing and typesetting
-              industry. Lorem Ipsum has been the industry's standard dummy text
-              ever since the 1500s, when an unknown printer took a galley of
-              type and scrambled it to make a type specimen book.
-            </p>
-          </div>
+      <div className="whyUsTitleAndCardsWrapper">
+        <div className="whyUsTitleAndSubtitle">
+          <h2 className="h2Styling">¿Por que Unitiendas?</h2>
+          <p className=""> La Razon es sencilla, con unitiendas tienes:</p>
         </div>
-        <div className="whyUsSecondAndThirdCardWrapper">
-          <div className="whyUsSecondCard">
+        <div className="whyUsCardsWrapper">
+          <div className="whyUsFirstCard">
             <img
-              className="whyUsSecondCardImage"
+              className="whyUsFirstCardImage"
               src="https://d22po4pjz3o32e.cloudfront.net/placeholder-image-landscape.svg"
               alt=""
             />
-            <div className="whyUsSecondCardText">
-              <h3 className="whyUsSecondCardHeader">
-                Acceso a los mejores Productos
+            <div className="whyUsFirstCardText">
+              <h3 className="whyUsFirstCardHeader">
+                Acceso Directo a los mejores Proveedores
               </h3>
-              <p className="whyUsSecondCardSubHeader">
+              <p className="whyUsFirstCardSubHeader">
                 Lorem Ipsum is simply dummy text of the printing and typesetting
                 industry. Lorem Ipsum has been the industry's standard dummy
                 text ever since the 1500s, when an unknown printer took a galley
@@ -119,22 +105,44 @@ const WhyUs = () => {
               </p>
             </div>
           </div>
-          <div className="whyUsThirdCard">
-            <img
-              className="whyUsThirdCardImage"
-              src="https://d22po4pjz3o32e.cloudfront.net/placeholder-image-landscape.svg"
-              alt=""
-            />
-            <div className="whyUsThirdCardText">
-              <h3 className="whyUsSecondCardHeader">
-                Una Plataforma Facil de Manejar
-              </h3>
-              <p className="whyUsThirdCardSubHeader">
-                Lorem Ipsum is simply dummy text of the printing and typesetting
-                industry. Lorem Ipsum has been the industry's standard dummy
-                text ever since the 1500s, when an unknown printer took a galley
-                of type and scrambled it to make a type specimen book.
-              </p>
+          <div className="whyUsSecondAndThirdCardWrapper">
+            <div className="whyUsSecondCard">
+              <img
+                className="whyUsSecondCardImage"
+                src="https://d22po4pjz3o32e.cloudfront.net/placeholder-image-landscape.svg"
+                alt=""
+              />
+              <div className="whyUsSecondCardText">
+                <h3 className="whyUsSecondCardHeader">
+                  Acceso a los mejores Productos
+                </h3>
+                <p className="whyUsSecondCardSubHeader">
+                  Lorem Ipsum is simply dummy text of the printing and
+                  typesetting industry. Lorem Ipsum has been the industry's
+                  standard dummy text ever since the 1500s, when an unknown
+                  printer took a galley of type and scrambled it to make a type
+                  specimen book.
+                </p>
+              </div>
+            </div>
+            <div className="whyUsThirdCard">
+              <img
+                className="whyUsThirdCardImage"
+                src="https://d22po4pjz3o32e.cloudfront.net/placeholder-image-landscape.svg"
+                alt=""
+              />
+              <div className="whyUsThirdCardText">
+                <h3 className="whyUsSecondCardHeader">
+                  Una Plataforma Facil de Manejar
+                </h3>
+                <p className="whyUsThirdCardSubHeader">
+                  Lorem Ipsum is simply dummy text of the printing and
+                  typesetting industry. Lorem Ipsum has been the industry's
+                  standard dummy text ever since the 1500s, when an unknown
+                  printer took a galley of type and scrambled it to make a type
+                  specimen book.
+                </p>
+              </div>
             </div>
           </div>
         </div>
@@ -142,6 +150,8 @@ const WhyUs = () => {
     </section>
   );
 };
+
+/*Not adding this benefits section for now*/
 
 const Benefits = () => {
   return (
@@ -167,14 +177,64 @@ const Benefits = () => {
 const HowItWorks = () => {
   return (
     <section className="OverallSectionStyling">
-      <h2 className="h2Styling">Como Funciona</h2>
-      <p className="">
-        {" "}
-        Paso 1: Regístrate en nuestra plataforma. Paso 2: Explora y selecciona
-        los productos que necesitas. Paso 3: Realiza tu pedido y programa la
-        entrega. Paso 4: Recibe tus productos y abastece tu tienda. Elementos
-        Visuales: Infografía o ilustraciones que representen cada paso.
-      </p>
+      <div className="howItWorksSectionHeaderAndListWrapper">
+        <div className="howItWorksHeaderAndSubheaderWrapper">
+          <h2 className="h2Styling">¿Como Funciona?</h2>
+          <p className="">
+            {" "}
+            Con estos 4 Simples pasos empiezas a disfrutar los beneficios de tu
+            alianza con Unitiendas:
+          </p>
+        </div>
+        <div className="howitworksListOfItemsWrapper">
+          <div className="howItworksItemWrapper">
+            <a
+              className="howitWorksItemLink"
+              href="https://api.whatsapp.com/send?phone=573059321550"
+              target="_blank"
+            >
+              <img
+                className="howitworksItemIcon"
+                src="../assets/checkmark.svg"
+                alt=""
+              />
+              <p className="howItWorksItemText">
+                Paso 1: Regístrate en nuestra plataforma
+              </p>
+            </a>
+          </div>
+          <div className="howItworksItemWrapper">
+            <img
+              className="howitworksItemIcon"
+              src="../assets/checkmark.svg"
+              alt=""
+            />
+            <p className="howItWorksItemText">
+              Paso 2: Explora y selecciona los productos que necesitas
+            </p>
+          </div>
+          <div className="howItworksItemWrapper">
+            <img
+              className="howitworksItemIcon"
+              src="../assets/checkmark.svg"
+              alt=""
+            />
+            <p className="howItWorksItemText">
+              Paso 3: Realiza tu pedido y programa la entrega
+            </p>
+          </div>
+          <div className="howItworksItemWrapper">
+            <img
+              className="howitworksItemIcon"
+              src="../assets/checkmark.svg"
+              alt=""
+            />
+            <p className="howItWorksItemText">
+              Paso 4: Recibe tus productos y abastece tu tienda
+            </p>
+          </div>
+        </div>
+      </div>
     </section>
   );
 };
@@ -182,16 +242,51 @@ const HowItWorks = () => {
 const AboutUs = () => {
   return (
     <section className="OverallSectionStyling">
-      <h2 className="h2Styling">Sobre nosotros</h2>
-      <p className="">
-        {" "}
-        Nuestra Misión: Empoderar a los tenderos locales y fortalecer las
-        comunidades. Nuestra Visión: Ser la red más confiable entre proveedores
-        y tenderos en el país. Valores: Transparencia, compromiso y servicio
-        comunitario. Imagen de Equipo: Foto del equipo detrás de Unitiendas o
-        imágenes que reflejen comunidad. Objetivo: Humanizar la iniciativa y
-        construir confianza mostrando quiénes están detrás del proyecto.
-      </p>
+      <div className="aboutUsTitleImageAndDescriptionWrapper">
+        <div className="aboutUsTitleAndSubtitleWrapper">
+          <h2 className="h2Styling">Sobre nosotros</h2>
+          <p className="">
+            {" "}
+            Nuestra Misión: Empoderar a los tenderos locales y fortalecer las
+            comunidades. Nuestra Visión: Ser la red más confiable entre
+            proveedores y tenderos en el país. Valores: Transparencia,
+            compromiso y servicio comunitario. Imagen de Equipo: Foto del equipo
+            detrás de Unitiendas o imágenes que reflejen comunidad. Objetivo:
+            Humanizar la iniciativa y construir confianza mostrando quiénes
+            están detrás del proyecto.
+          </p>
+        </div>
+        <div className="aboutUsImageAndTextWrapper">
+          <div className="aboutUsImageWrapper">
+            <img
+              className="aboutUsImage"
+              src="../assets/images/Fundador.jpg"
+              alt=""
+            />
+          </div>
+          <div className="aboutUsTextAndAutorWrapper">
+            <div className="aboutUsTextWrapper">
+              <p className="aboutUsText">
+                "Mi sueño con Unitiendas es que podamos empoderar a los tenderos
+                locales y fortalecer las comunidades donde vivimos. Creo
+                firmemente que la deuda social de nuestro país con los tenderos
+                es monumental. Los primeros en cualquier pueblito, caserío o
+                localidad siempre son los tenderos; ellos son pilares
+                fundamentales de nuestra Colombia.
+              </p>
+              <p>
+                Creemos en la transparencia, el compromiso y el servicio
+                comunitario como bases fundamentales. Aspiramos a ser la red más
+                confiable entre proveedores y tenderos en el país. Al mostrar
+                quiénes estamos detrás de Unitiendas, queremos humanizar nuestra
+                iniciativa y construir confianza, porque sabemos que juntos
+                podemos hacer una diferencia real."
+              </p>
+            </div>
+            <p className="aboutUsTextAuthor"> Walber Porto - Fundador </p>
+          </div>
+        </div>
+      </div>
     </section>
   );
 };
@@ -201,7 +296,6 @@ export default function HomePage() {
     <main className="globalPaddingAndStructuring">
       <HeroSection />
       <WhyUs />
-      <Benefits />
       <HowItWorks />
       <AboutUs />
     </main>
