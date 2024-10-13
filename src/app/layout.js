@@ -1,5 +1,6 @@
 import Footer from "@/components/Footer";
 import Navbar from "@/components/Navbar";
+import WhatsappWidget from "@/components/whatsappWidget";
 
 export const metadata = {
   title: "Next.js",
@@ -14,6 +15,7 @@ export default function RootLayout({ children }) {
           <Navbar />
           <main>{children}</main>
           <Footer />
+          <WhatsappWidget />
         </div>
       </body>
     </html>

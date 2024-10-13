@@ -199,7 +199,7 @@ const HowItWorks = () => {
                 alt=""
               />
               <p className="howItWorksItemText">
-                Paso 1: Regístrate en nuestra plataforma
+                Paso 1: Haz Click Aqui para Regístrarte en nuestra plataforma
               </p>
             </a>
           </div>
