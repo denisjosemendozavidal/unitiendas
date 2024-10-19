@@ -54,3 +54,16 @@
   width: 100%;
   border-top: lightgray solid 2px;
 }
+
+@media (max-width: 1050px) {
+  .footerContentWrapper {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    width: 100%;
+    padding: 0 5%;
+    min-height: 20rem;
+    gap: 2rem;
+  }
+}
