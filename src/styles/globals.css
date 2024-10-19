@@ -103,4 +103,19 @@ a {
   align-items: center;
   max-width: 90rem;
   padding: 2rem;
+  padding-top: 0;
+}
+
+@media (max-width: 700px) {
+  .globalPaddingAndStructuring {
+    display: flex;
+    flex-direction: column;
+    gap: 2rem;
+    flex-wrap: wrap;
+    align-content: center;
+    align-items: center;
+    width: 100vw;
+    padding: 5px;
+    padding-top: 0;
+  }
 }
