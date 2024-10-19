@@ -12,6 +12,7 @@ export default function RootLayout({ children }) {
     <html lang="en">
       <body>
         <div className="pagewrapper">
+          <Navbar />
           <main>{children}</main>
           <Footer />
           <WhatsappWidget />
